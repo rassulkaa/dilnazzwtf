@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seasonal Demand Forecasting - AI-Powered Analytics</title>
-    <meta name="description" content="Advanced AI-powered seasonal demand forecasting model for optimizing inventory and reducing business losses through predictive analytics.">
+    <title>Маусымдық Сұранысты Болжау - AI-Күшімен Аналитика</title>
+    <meta name="description"
+        content="Болжамдық аналитика арқылы түгендеуді оңтайландыру және бизнес шығындарын азайтуға арналған жетілдірілген AI-күшімен маусымдық сұранысты болжау моделі.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
                 <span class="brand-icon">📊</span>
-                <span class="brand-text">SeasonalAI</span>
+                <span class="brand-text">МаусымдықAI</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#data-forecast" class="nav-link">Data & Forecast</a></li>
-                <li><a href="#ai-tools" class="nav-link">AI Tools</a></li>
-                <li><a href="#conclusions" class="nav-link">Conclusions</a></li>
+                <li><a href="#home" class="nav-link active">Басты бет</a></li>
+                <li><a href="#about" class="nav-link">Туралы</a></li>
+                <li><a href="#data-forecast" class="nav-link">Деректер және болжам</a></li>
+                <li><a href="#ai-tools" class="nav-link">AI құралдары</a></li>
+                <li><a href="#conclusions" class="nav-link">Қорытындылар</a></li>
             </ul>
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
                 <span class="theme-icon">🌙</span>
@@ -37,27 +42,28 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    AI-Powered Seasonal Demand Forecasting
+                    AI-Күшімен Маусымдық Сұранысты Болжау
                 </h1>
                 <p class="hero-subtitle">
-                    Transform historical sales data into actionable predictions. Optimize inventory, reduce losses, and make data-driven decisions with advanced neural network analytics.
+                    Тарихи сату деректерін нақты болжамдарға айналдырыңыз. Жетілдірілген нейрондық желі талдауларымен
+                    түгендеуді оңтайландырыңыз, шығындарды азайтыңыз және деректерге негізделген шешімдер қабылдаңыз.
                 </p>
                 <div class="hero-cta">
-                    <a href="#data-forecast" class="btn btn-primary">Explore Forecasts</a>
-                    <a href="#ai-tools" class="btn btn-secondary">Try AI Tools</a>
+                    <a href="#data-forecast" class="btn btn-primary">Болжамдарды зерттеу</a>
+                    <a href="#ai-tools" class="btn btn-secondary">AI құралдарын байқап көріңіз</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-card">
                         <div class="stat-number">95%</div>
-                        <div class="stat-label">Forecast Accuracy</div>
+                        <div class="stat-label">Болжам дәлдігі</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">3 Years</div>
-                        <div class="stat-label">Historical Data</div>
+                        <div class="stat-number">3 Жыл</div>
+                        <div class="stat-label">Тарихи деректер</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">Real-time</div>
-                        <div class="stat-label">AI Monitoring</div>
+                        <div class="stat-number">Нақты уақыт</div>
+                        <div class="stat-label">AI мониторингі</div>
                     </div>
                 </div>
             </div>
@@ -70,43 +76,59 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About the Project</h2>
+            <h2 class="section-title">Жоба туралы</h2>
             <div class="about-grid">
                 <div class="about-card">
                     <div class="card-icon">🎯</div>
-                    <h3>Project Objective</h3>
-                    <p>Demonstrate how historical sales data combined with AI and neural networks can accurately forecast demand for seasonal products, enabling businesses to optimize inventory management and reduce financial losses.</p>
+                    <h3>Жобаның Мақсаты</h3>
+                    <p>Тарихи сату деректерін AI және нейрондық желілермен біріктіру арқылы маусымдық өнімдерге
+                        сұранысты қалай дәл болжауға болатынын көрсету, бұл бизнеске қорларды басқаруды оңтайландыруға
+                        және қаржылық шығындарды азайтуға мүмкіндік береді.</p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">📈</div>
-                    <h3>Data-Driven Insights</h3>
-                    <p>Our model analyzes 3 years of monthly sales data across multiple seasonal products, identifying patterns, trends, and seasonality indices to generate reliable predictions for business planning.</p>
+                    <h3>Деректерге негізделген инсайттар</h3>
+                    <p>Біздің модель бірнеше маусымдық өнімдер бойынша 3 жылдық ай сайынғы сатылым деректерін талдайды,
+                        үлгілерді, тенденцияларды және маусымдық индекстерді анықтап, бизнесті жоспарлау үшін сенімді
+                        болжамдар жасайды.</p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">🤖</div>
-                    <h3>AI Enhancement</h3>
-                    <p>Advanced neural networks enhance forecasting accuracy by learning complex patterns, monitoring external factors, and continuously adapting predictions based on real-world market dynamics.</p>
+                    <h3>AI жетілдіру</h3>
+                    <p>Жетілдірілген нейрондық желілер күрделі үлгілерді үйрену, сыртқы факторларды бақылау және нақты
+                        нарықтық динамикаға негізделген болжамдарды үздіксіз бейімдеу арқылы болжау дәлдігін арттырады.
+                    </p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">💼</div>
-                    <h3>Business Impact</h3>
-                    <p>Seasonal forecasting helps businesses reduce overstock and stockout scenarios, optimize supply chain efficiency, improve cash flow management, and make strategic decisions with confidence.</p>
+                    <h3>Бизнес әсері</h3>
+                    <p>Маусымдық болжау бизнеске артық қор мен тапшылық жағдайларын азайтуға, жеткізу тізбегінің
+                        тиімділігін оңтайландыруға, ақша ағындарын басқаруды жақсартуға және сенімді стратегиялық
+                        шешімдер қабылдауға көмектеседі.
+                    </p>
                 </div>
             </div>
 
             <div class="methodology-section">
-                <h3 class="subsection-title">Why Seasonal Forecasting Matters</h3>
+                <h3 class="subsection-title">Маусымдық болжау неге маңызды?</h3>
                 <div class="methodology-content">
                     <div class="method-text">
-                        <p><strong>Seasonality</strong> refers to predictable patterns that repeat at regular intervals. For retail and manufacturing, understanding these patterns is critical for:</p>
+                        <p><strong>Маусымдылық</strong> тұрақты аралықтарда қайталанатын болжамды үлгілерді білдіреді.
+                            Бөлшек сауда және өндіріс үшін бұл үлгілерді түсіну келесілер үшін өте маңызды:</p>
                         <ul class="feature-list">
-                            <li><span class="list-icon">✓</span> Preventing revenue loss from stockouts during peak demand</li>
-                            <li><span class="list-icon">✓</span> Avoiding excess inventory costs during low-demand periods</li>
-                            <li><span class="list-icon">✓</span> Optimizing production schedules and workforce allocation</li>
-                            <li><span class="list-icon">✓</span> Improving customer satisfaction through product availability</li>
-                            <li><span class="list-icon">✓</span> Enhancing marketing campaign timing and budget allocation</li>
+                            <li><span class="list-icon">✓</span> Ең жоғары сұраныс кезінде тапшылықтан кірістің жоғалуын
+                                болдырмау</li>
+                            <li><span class="list-icon">✓</span> Сұраныс аз кезеңдерде артық қор шығындарын болдырмау
+                            </li>
+                            <li><span class="list-icon">✓</span> Өндіріс кестелерін және жұмыс күшін бөлуді оңтайландыру
+                            </li>
+                            <li><span class="list-icon">✓</span> Өнімнің қолжетімділігі арқылы тұтынушылардың
+                                қанағаттануын арттыру</li>
+                            <li><span class="list-icon">✓</span> Маркетингтік науқан уақытын және бюджетті бөлуді
+                                жақсарту</li>
                         </ul>
-                        <p class="highlight-text">Our AI model combines traditional statistical methods with modern machine learning to deliver forecasts that adapt to changing market conditions.</p>
+                        <p class="highlight-text">Біздің AI моделі өзгермелі нарық жағдайларына бейімделетін болжамдарды
+                            жеткізу үшін дәстүрлі статистикалық әдістерді заманауи машиналық оқытумен біріктіреді.</p>
                     </div>
                 </div>
             </div>
@@ -116,45 +138,48 @@
     <!-- Data & Forecast Section -->
     <section id="data-forecast" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Data & Forecast Analytics</h2>
-            
+            <h2 class="section-title">Деректер және Болжамдық Аналитика</h2>
+
             <!-- Data Overview -->
             <div class="data-overview">
                 <div class="overview-card">
-                    <h4>Data Sources</h4>
-                    <p>Historical monthly sales data (2022-2024) for three seasonal product categories: Winter Jackets, Summer Beverages, and Holiday Decorations.</p>
+                    <h4>Деректер көздері</h4>
+                    <p>Үш маусымдық өнім санаты үшін 3 жылдық (2022-2024) ай сайынғы тарихи сатылым деректері: Қысқы
+                        күртешелер, Жазғы сусындар және Мерекелік әшекейлер.</p>
                 </div>
                 <div class="overview-card">
-                    <h4>Forecast Method</h4>
-                    <p>Moving average with seasonal adjustment, enhanced by AI pattern recognition and external trend monitoring.</p>
+                    <h4>Болжау әдісі</h4>
+                    <p>AI үлгісін тану және сыртқы трендтерді бақылау арқылы жақсартылған, маусымдық түзетулері бар
+                        жылжымалы орташа мән.</p>
                 </div>
                 <div class="overview-card">
-                    <h4>Seasonality Index</h4>
-                    <p>Calculated ratio showing how much demand deviates from the average, with values >1 indicating above-average demand.</p>
+                    <h4>Маусымдық индекс</h4>
+                    <p>Сұраныстың орташа деңгейден қаншалықты ауытқитынын көрсететін есептелген коэффициент, >1 мәні
+                        орташадан жоғары сұранысты білдіреді.</p>
                 </div>
             </div>
 
             <!-- Interactive Filters -->
             <div class="filter-controls">
                 <div class="filter-group">
-                    <label for="productFilter">Product:</label>
+                    <label for="productFilter">Өнім:</label>
                     <select id="productFilter" class="filter-select">
-                        <option value="all">All Products</option>
-                        <option value="winter-jackets">Winter Jackets</option>
-                        <option value="summer-beverages">Summer Beverages</option>
-                        <option value="holiday-decorations">Holiday Decorations</option>
+                        <option value="all">Барлық өнімдер</option>
+                        <option value="winter-jackets">Қысқы күртешелер</option>
+                        <option value="summer-beverages">Жазғы сусындар</option>
+                        <option value="holiday-decorations">Мерекелік әшекейлер</option>
                     </select>
                 </div>
                 <div class="filter-group">
-                    <label for="yearFilter">Year:</label>
+                    <label for="yearFilter">Жыл:</label>
                     <select id="yearFilter" class="filter-select">
-                        <option value="all">All Years</option>
+                        <option value="all">Барлық жылдар</option>
                         <option value="2022">2022</option>
                         <option value="2023">2023</option>
                         <option value="2024">2024</option>
                     </select>
                 </div>
-                <button class="btn btn-small" id="resetFilters">Reset Filters</button>
+                <button class="btn btn-small" id="resetFilters">Фильтрлерді тазалау</button>
             </div>
 
             <!-- Dynamic Table -->
@@ -162,13 +187,13 @@
                 <table id="forecastTable" class="data-table">
                     <thead>
                         <tr>
-                            <th data-sort="product">Product <span class="sort-icon">↕</span></th>
-                            <th data-sort="year">Year <span class="sort-icon">↕</span></th>
-                            <th data-sort="month">Month <span class="sort-icon">↕</span></th>
-                            <th data-sort="actual">Actual Sales <span class="sort-icon">↕</span></th>
-                            <th data-sort="forecast">Forecast <span class="sort-icon">↕</span></th>
-                            <th data-sort="variance">Variance <span class="sort-icon">↕</span></th>
-                            <th data-sort="seasonality">Seasonality Index <span class="sort-icon">↕</span></th>
+                            <th data-sort="product">Өнім <span class="sort-icon">↕</span></th>
+                            <th data-sort="year">Жыл <span class="sort-icon">↕</span></th>
+                            <th data-sort="month">Ай <span class="sort-icon">↕</span></th>
+                            <th data-sort="actual">Нақты сатылым <span class="sort-icon">↕</span></th>
+                            <th data-sort="forecast">Болжам <span class="sort-icon">↕</span></th>
+                            <th data-sort="variance">Ауытқу <span class="sort-icon">↕</span></th>
+                            <th data-sort="seasonality">Маусымдық индекс <span class="sort-icon">↕</span></th>
                         </tr>
                     </thead>
                     <tbody id="tableBody">
@@ -180,34 +205,38 @@
             <!-- Charts -->
             <div class="charts-grid">
                 <div class="chart-container">
-                    <h3 class="chart-title">Seasonal Trends Comparison</h3>
+                    <h3 class="chart-title">Маусымдық үрдістерді салыстыру</h3>
                     <canvas id="trendChart"></canvas>
                 </div>
                 <div class="chart-container">
-                    <h3 class="chart-title">Forecast Accuracy</h3>
+                    <h3 class="chart-title">Болжам дәлдігі</h3>
                     <canvas id="accuracyChart"></canvas>
                 </div>
             </div>
 
             <!-- Insights -->
             <div class="insights-panel">
-                <h3>Key Insights</h3>
+                <h3>Негізгі Инсайттар</h3>
                 <div class="insight-grid">
                     <div class="insight-item">
                         <span class="insight-icon">❄️</span>
-                        <p><strong>Winter Jackets</strong> show peak demand in December-January with seasonality index of 1.85-1.98, dropping to 0.18-0.26 in summer months.</p>
+                        <p><strong>Қысқы күртешелер</strong> желтоқсан-қаңтар айларында сұраныс шыңына жетеді, маусымдық
+                            индексі 1.85-1.98, ал жаз айларында 0.18-0.26-ға дейін төмендейді.</p>
                     </div>
                     <div class="insight-item">
                         <span class="insight-icon">☀️</span>
-                        <p><strong>Summer Beverages</strong> demonstrate opposite pattern with July peak (2.08 index) and winter lows (0.33-0.35 index).</p>
+                        <p><strong>Жазғы сусындар</strong> қарама-қарсы үлгіні көрсетеді, шілдедегі шыңы (2.08 индекс)
+                            және қысқы төмен көрсеткіштер (0.33-0.35 индекс).</p>
                     </div>
                     <div class="insight-item">
                         <span class="insight-icon">🎄</span>
-                        <p><strong>Holiday Decorations</strong> exhibit extreme seasonality, with 3.0 index in December compared to 0.23-0.30 throughout most of the year.</p>
+                        <p><strong>Мерекелік әшекейлер</strong> экстремалды маусымдылықты көрсетеді, желтоқсанда 3.0
+                            индекс, ал жылдың көп бөлігінде 0.23-0.30.</p>
                     </div>
                     <div class="insight-item">
                         <span class="insight-icon">📊</span>
-                        <p><strong>Forecast Accuracy</strong> averages 95%, with minor variances typically within 2-5% of actual sales figures.</p>
+                        <p><strong>Болжам дәлдігі</strong> орта есеппен 95%-ды құрайды, кішігірім ауытқулар әдетте нақты
+                            сатылым көрсеткіштерінің 2-5% шегінде болады.</p>
                     </div>
                 </div>
             </div>
@@ -217,27 +246,39 @@
     <!-- AI Tools Section -->
     <section id="ai-tools" class="section">
         <div class="container">
-            <h2 class="section-title">AI-Powered Tools</h2>
+            <h2 class="section-title">AI-Басқарылатын Құралдар</h2>
 
             <!-- AI Avatar -->
             <div class="ai-avatar-section">
                 <div class="avatar-container">
-                    <img src="assets/images/ai-avatar.png" alt="AI Business Analyst Avatar" class="ai-avatar-image">
+                    <img src="assets/images/ai-avatar.png" alt="AI Бизнес Сарапшы Аватары" class="ai-avatar-image">
                 </div>
                 <div class="avatar-content">
-                    <h3 class="subsection-title">Meet Your AI Analytics Assistant</h3>
+                    <h3 class="subsection-title">AI Аналитика Көмекшісімен Танысыңыз</h3>
                     <div class="avatar-explanations">
                         <div class="explanation-card">
-                            <h4>What is Seasonal Demand?</h4>
-                            <p>Seasonal demand refers to predictable fluctuations in customer purchasing patterns that occur at specific times of the year. These patterns are driven by factors such as weather, holidays, cultural events, and consumer behavior cycles. Understanding seasonality allows businesses to anticipate when products will be in high or low demand.</p>
+                            <h4>Маусымдық сұраныс дегеніміз не?</h4>
+                            <p>Маусымдық сұраныс - бұл жылдың белгілі бір уақыттарында болатын тұтынушылардың сатып алу
+                                үлгілеріндегі болжамды ауытқулар. Бұл үлгілерге ауа-райы, мерекелер, мәдени іс-шаралар
+                                және тұтынушылық мінез-құлық циклдері әсер етеді. Маусымдылықты түсіну бизнеске
+                                өнімдерге сұраныс қашан жоғары немесе төмен болатынын болжауға мүмкіндік береді.</p>
                         </div>
                         <div class="explanation-card">
-                            <h4>Why Forecasting is Important</h4>
-                            <p>Accurate demand forecasting is crucial for business success. It prevents costly overstock situations that tie up capital and warehouse space, while avoiding stockouts that lead to lost sales and dissatisfied customers. Forecasting enables optimal resource allocation, from manufacturing schedules to marketing budgets, ultimately improving profitability and customer satisfaction.</p>
+                            <h4>Болжау неге маңызды</h4>
+                            <p>Сұранысты дәл болжау бизнестің табыстылығы үшін өте маңызды. Ол капитал мен қойма орнын
+                                алатын қымбат артық қор жағдайларын болдырмайды, сонымен қатар сатылымның жоғалуына және
+                                тұтынушылардың наразылығына әкелетін тапшылықтан сақтайды. Болжау өндіріс кестелерінен
+                                бастап маркетингтік бюджеттерге дейін ресурстарды оңтайлы бөлуге мүмкіндік береді, сайып
+                                келгенде кірістілік пен тұтынушылардың қанағаттануын арттырады.</p>
                         </div>
                         <div class="explanation-card">
-                            <h4>How the Prediction Model Works</h4>
-                            <p>Our model employs a hybrid approach combining statistical time series analysis with machine learning. It calculates moving averages to identify trends, applies seasonal adjustment factors based on historical patterns, and uses neural networks to detect complex relationships in the data. The AI continuously learns from new data, refining predictions and adapting to market changes. External factors like economic indicators and trend analysis are integrated through our AI agent monitoring system.</p>
+                            <h4>Болжау моделі қалай жұмыс істейді</h4>
+                            <p>Біздің модель статистикалық уақыттық қатарларды талдауды машиналық оқытумен біріктіретін
+                                гибридті тәсілді қолданады. Ол трендтерді анықтау үшін жылжымалы орташа мәндерді
+                                есептейді, тарихи үлгілерге негізделген маусымдық түзету коэффициенттерін қолданады және
+                                деректердегі күрделі байланыстарды анықтау үшін нейрондық желілерді пайдаланады. AI жаңа
+                                деректерден үздіксіз үйреніп, болжамдарды нақтылайды және нарық өзгерістеріне
+                                бейімделеді.</p>
                         </div>
                     </div>
                 </div>
@@ -251,14 +292,16 @@
                         <div class="chat-message bot-message">
                             <div class="message-avatar">🤖</div>
                             <div class="message-content">
-                                <p>Hello! I'm your seasonal demand forecasting assistant. I can answer questions about:</p>
+                                <p>Сәлем! Мен сіздің маусымдық сұранысты болжау бойынша көмекшіңізбін. Мен келесі
+                                    сұрақтарға жауап бере аламын:</p>
                                 <ul>
-                                    <li>Demand forecasting methodologies</li>
-                                    <li>Seasonality patterns and analysis</li>
-                                    <li>Business applications of predictions</li>
-                                    <li>Model limitations and best practices</li>
+                                    <li>Сұранысты болжау әдістемелері</li>
+                                    <li>Маусымдылық үлгілері және талдау</li>
+                                    <li>Болжамдарды бизнесте қолдану</li>
+                                    <li>Модельдің шектеулері және озық тәжірибелер</li>
                                 </ul>
-                                <p>Try asking: "How do you calculate seasonality?" or "What are the limitations of forecasting?"</p>
+                                <p>Мына сұрақты қойып көріңіз: "Маусымдылықты қалай есептейсіз?" немесе "Болжаудың
+                                    қандай шектеулері бар?"</p>
                             </div>
                         </div>
                     </div>
@@ -267,107 +310,115 @@
                         <button id="chatSend" class="btn btn-primary">Send</button>
                     </div>
                     <div class="quick-questions">
-                        <span class="quick-label">Quick questions:</span>
-                        <button class="quick-btn" data-question="How do you calculate seasonality?">Seasonality Calculation</button>
-                        <button class="quick-btn" data-question="What data do you use?">Data Sources</button>
-                        <button class="quick-btn" data-question="What are the limitations?">Model Limitations</button>
+                        <span class="quick-label">Жылдам сұрақтар:</span>
+                        <button class="quick-btn" data-question="Маусымдылық қалай есептеледі?">Маусымдылықты
+                            есептеу</button>
+                        <button class="quick-btn" data-question="Қандай деректер қолданылады?">Деректер көздері</button>
+                        <button class="quick-btn" data-question="Қандай шектеулер бар?">Модель шектеулері</button>
                     </div>
                 </div>
             </div>
 
             <!-- AI Agent Dashboard -->
             <div class="ai-agent-section">
-                <h3 class="subsection-title">AI Agent Monitoring Dashboard</h3>
+                <h3 class="subsection-title">AI Агент Мониторинг Бақылау тақтасы</h3>
                 <div class="agent-description">
-                    <p><strong>Purpose:</strong> Our AI agent continuously monitors external data sources and market conditions to ensure forecast accuracy remains optimal. It analyzes news trends, seasonal weather patterns, economic indicators, and consumer behavior shifts to identify when predictions need adjustment.</p>
+                    <p><strong>Мақсаты:</strong> Біздің AI агенті болжам дәлдігін оңтайлы сақтау үшін сыртқы деректер
+                        көздерін және нарық жағдайларын үздіксіз бақылайды. Ол жаңалықтар трендтерін, ауа-райының
+                        маусымдық үлгілерін, экономикалық көрсеткіштерді және болжамдарды түзету қажеттігін анықтау үшін
+                        тұтынушылық мінез-құлық өзгерістерін талдайды.</p>
                 </div>
-                
+
                 <div class="agent-dashboard">
                     <div class="dashboard-grid">
                         <div class="dashboard-card">
-                            <h4>🌐 External Data Sources</h4>
+                            <h4>🌐 Сыртқы деректер көздері</h4>
                             <div class="status-list">
                                 <div class="status-item status-active">
                                     <span class="status-dot"></span>
-                                    <span>Weather API</span>
-                                    <span class="status-badge">Active</span>
+                                    <span>Ауа-райы API</span>
+                                    <span class="status-badge">Белсенді</span>
                                 </div>
                                 <div class="status-item status-active">
                                     <span class="status-dot"></span>
-                                    <span>Economic Indicators</span>
-                                    <span class="status-badge">Active</span>
+                                    <span>Экономикалық көрсеткіштер</span>
+                                    <span class="status-badge">Белсенді</span>
                                 </div>
                                 <div class="status-item status-active">
                                     <span class="status-dot"></span>
-                                    <span>News & Trends</span>
-                                    <span class="status-badge">Active</span>
+                                    <span>Жаңалықтар мен трендтер</span>
+                                    <span class="status-badge">Белсенді</span>
                                 </div>
                                 <div class="status-item status-active">
                                     <span class="status-dot"></span>
-                                    <span>Social Media Sentiment</span>
-                                    <span class="status-badge">Active</span>
+                                    <span>Әлеуметтік желі пікірлері</span>
+                                    <span class="status-badge">Белсенді</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="dashboard-card">
-                            <h4>📊 Forecast Accuracy Metrics</h4>
+                            <h4>📊 Болжам дәлдігінің метрикалары</h4>
                             <div class="metrics-list">
                                 <div class="metric-row">
-                                    <span>Overall Accuracy:</span>
+                                    <span>Жалпы дәлдік:</span>
                                     <strong class="metric-value">95.2%</strong>
                                 </div>
                                 <div class="metric-row">
-                                    <span>Winter Products:</span>
+                                    <span>Қысқы өнімдер:</span>
                                     <strong class="metric-value">96.1%</strong>
                                 </div>
                                 <div class="metric-row">
-                                    <span>Summer Products:</span>
+                                    <span>Жазғы өнімдер:</span>
                                     <strong class="metric-value">94.8%</strong>
                                 </div>
                                 <div class="metric-row">
-                                    <span>Holiday Products:</span>
+                                    <span>Мерекелік өнімдер:</span>
                                     <strong class="metric-value">94.5%</strong>
                                 </div>
                             </div>
                         </div>
 
                         <div class="dashboard-card">
-                            <h4>⚠️ Recent Alerts</h4>
+                            <h4>⚠️ Соңғы ескертулер</h4>
                             <div class="alerts-list">
                                 <div class="alert-item alert-info">
                                     <span class="alert-icon">ℹ️</span>
                                     <div class="alert-content">
-                                        <strong>Weather Pattern Change</strong>
-                                        <p>Warmer December predicted - winter jacket demand may decrease by 3-5%</p>
-                                        <span class="alert-time">2 hours ago</span>
+                                        <strong>Ауа-райы үлгісінің өзгеруі</strong>
+                                        <p>Жылы желтоқсан болжануда - қысқы күртешелерге сұраныс 3-5%-ға төмендеуі
+                                            мүмкін</p>
+                                        <span class="alert-time">2 сағат бұрын</span>
                                     </div>
                                 </div>
                                 <div class="alert-item alert-success">
                                     <span class="alert-icon">✓</span>
                                     <div class="alert-content">
-                                        <strong>Forecast Validated</strong>
-                                        <p>Summer beverage predictions matched actual sales within 2%</p>
-                                        <span class="alert-time">1 day ago</span>
+                                        <strong>Болжам расталды</strong>
+                                        <p>Жазғы сусын болжамдары нақты сатылыммен 2% шегінде сәйкес келді</p>
+                                        <span class="alert-time">1 күн бұрын</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="dashboard-card">
-                            <h4>💡 AI Recommendations</h4>
+                            <h4>💡 AI Ұсыныстары</h4>
                             <div class="recommendations-list">
                                 <div class="recommendation-item">
-                                    <span class="rec-priority high">High</span>
-                                    <p><strong>Adjust January Forecast:</strong> Increase winter jacket forecast by 8% based on colder-than-average weather predictions.</p>
+                                    <span class="rec-priority high">Жоғары</span>
+                                    <p><strong>Қаңтар болжамын түзету:</strong> Қысқы күртеше болжамын суық ауа-райы
+                                        болжамына сүйене отырып 8%-ға арттырыңыз.</p>
                                 </div>
                                 <div class="recommendation-item">
-                                    <span class="rec-priority medium">Medium</span>
-                                    <p><strong>Monitor Trend:</strong> Social media buzz around sustainable holiday decorations growing - consider trending analysis.</p>
+                                    <span class="rec-priority medium">Орташа</span>
+                                    <p><strong>Трендті бақылау:</strong> Тұрақты мерекелік әшекейлер туралы әлеуметтік
+                                        желідегі шудың өсуі - тренд талдауын қарастырыңыз.</p>
                                 </div>
                                 <div class="recommendation-item">
-                                    <span class="rec-priority low">Low</span>
-                                    <p><strong>Data Quality:</strong> All data sources reporting normally, no action required.</p>
+                                    <span class="rec-priority low">Төмен</span>
+                                    <p><strong>Деректер сапасы:</strong> Барлық деректер көздері қалыпты жұмыс істеп
+                                        тұр, әрекет қажет емес.</p>
                                 </div>
                             </div>
                         </div>
@@ -375,37 +426,37 @@
                 </div>
 
                 <div class="agent-workflow">
-                    <h4>Agent Workflow Process</h4>
+                    <h4>Агент жұмыс процесі</h4>
                     <div class="workflow-steps">
                         <div class="workflow-step">
                             <div class="step-number">1</div>
                             <div class="step-content">
-                                <h5>Data Collection</h5>
-                                <p>Continuously gather data from external sources (weather, news, economic indicators)</p>
+                                <h5>Деректерді жинау</h5>
+                                <p>Сыртқы көздерден деректерді үздіксіз жинау (ауа-райы, жаңалықтар, экономика)</p>
                             </div>
                         </div>
                         <div class="workflow-arrow">→</div>
                         <div class="workflow-step">
                             <div class="step-number">2</div>
                             <div class="step-content">
-                                <h5>Pattern Analysis</h5>
-                                <p>Apply ML algorithms to identify anomalies and emerging trends</p>
+                                <h5>Үлгіні талдау</h5>
+                                <p>Аномалиялар мен жаңа трендтерді анықтау үшін ML алгоритмдерін қолдану</p>
                             </div>
                         </div>
                         <div class="workflow-arrow">→</div>
                         <div class="workflow-step">
                             <div class="step-number">3</div>
                             <div class="step-content">
-                                <h5>Impact Assessment</h5>
-                                <p>Evaluate how external factors affect current forecasts</p>
+                                <h5>Әсерді бағалау</h5>
+                                <p>Сыртқы факторлардың ағымдағы болжамдарға қалай әсер ететінін бағалау</p>
                             </div>
                         </div>
                         <div class="workflow-arrow">→</div>
                         <div class="workflow-step">
                             <div class="step-number">4</div>
                             <div class="step-content">
-                                <h5>Recommendation</h5>
-                                <p>Generate actionable adjustments to improve forecast accuracy</p>
+                                <h5>Ұсыныс</h5>
+                                <p>Болжам дәлдігін жақсарту үшін әрекет етуге болатын түзетулерді жасау</p>
                             </div>
                         </div>
                     </div>
@@ -417,96 +468,115 @@
     <!-- Conclusions Section -->
     <section id="conclusions" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Conclusions & Key Takeaways</h2>
-            
+            <h2 class="section-title">Қорытындылар және Негізгі Түйіндер</h2>
+
             <div class="conclusions-content">
                 <div class="conclusion-block">
-                    <h3>Project Achievements</h3>
-                    <p>This analytical platform successfully demonstrates the power of combining historical sales data with artificial intelligence to create accurate, actionable seasonal demand forecasts. Through interactive visualizations, dynamic data analysis, and AI-enhanced predictions, we've shown how businesses can transform raw data into strategic insights.</p>
+                    <h3>Жоба Жетістіктері</h3>
+                    <p>Бұл аналитикалық платформа маусымдық сұранысты дәл, әрекетке жарамды болжау үшін тарихи сатылым
+                        деректерін жасанды интеллектпен біріктірудің күшін сәтті көрсетеді. Интерактивті
+                        визуализациялар, динамикалық деректерді талдау және AI-мен жақсартылған болжамдар арқылы біз
+                        бизнес шикі деректерді стратегиялық инсайттарға қалай айналдыра алатынын көрсеттік.</p>
                 </div>
 
                 <div class="benefits-limitations-grid">
                     <div class="benefits-section">
-                        <h3>✓ Benefits of AI Forecasting</h3>
+                        <h3>✓ AI Болжауының Артықшылықтары</h3>
                         <ul class="benefits-list">
                             <li>
-                                <strong>High Accuracy:</strong> 95%+ accuracy rate in predicting seasonal demand patterns
+                                <strong>Жоғары Дәлдік:</strong> Маусымдық сұраныс үлгілерін болжаудағы 95%+ дәлдік
+                                көрсеткіші
                             </li>
                             <li>
-                                <strong>Cost Reduction:</strong> Minimize inventory holding costs and prevent stockout losses
+                                <strong>Шығындарды Азайту:</strong> Қорларды ұстау шығындарын азайту және тапшылық
+                                шығындарының алдын алу
                             </li>
                             <li>
-                                <strong>Adaptability:</strong> AI agents continuously monitor and adjust to market changes
+                                <strong>Бейімделгіштік:</strong> AI агенттері нарықтағы өзгерістерді үздіксіз бақылап,
+                                бейімделеді
                             </li>
                             <li>
-                                <strong>Automation:</strong> Reduce manual forecasting effort and human error
+                                <strong>Автоматтандыру:</strong> Қолмен болжау күш-жігерін және адами қателіктерді
+                                азайту
                             </li>
                             <li>
-                                <strong>Scalability:</strong> Easily apply to multiple products and market segments
+                                <strong>Ауқымдылық:</strong> Бірнеше өнімдер мен нарық сегменттеріне оңай қолдану
                             </li>
                             <li>
-                                <strong>Data-Driven Decisions:</strong> Replace intuition with evidence-based planning
+                                <strong>Деректерге Негізделген Шешімдер:</strong> Интуицияны дәлелденген жоспарлаумен
+                                алмастыру
                             </li>
                         </ul>
                     </div>
 
                     <div class="limitations-section">
-                        <h3>⚠️ Limitations & Considerations</h3>
+                        <h3>⚠️ Шектеулер және Ескертпелер</h3>
                         <ul class="limitations-list">
                             <li>
-                                <strong>Historical Dependency:</strong> Models rely on past patterns; unprecedented events may not be predicted
+                                <strong>Тарихи Тәуелділік:</strong> Модельдер өткен үлгілерге сүйенеді; бұрын-соңды
+                                болмаған оқиғалар болжанбауы мүмкін
                             </li>
                             <li>
-                                <strong>Data Quality:</strong> Accuracy depends on clean, comprehensive historical data
+                                <strong>Деректер Сапасы:</strong> Дәлдік таза, толық тарихи деректерге байланысты
                             </li>
                             <li>
-                                <strong>External Disruptions:</strong> Black swan events (pandemics, natural disasters) can invalidate forecasts
+                                <strong>Сыртқы Кедергілер:</strong> Форс-мажорлық жағдайлар (пандемиялар, табиғи
+                                апаттар) болжамдарды жарамсыз етуі мүмкін
                             </li>
                             <li>
-                                <strong>Market Dynamics:</strong> Rapid consumer behavior shifts may outpace model adaptation
+                                <strong>Нарықтық Динамика:</strong> Тұтынушылық мінез-құлықтағы жылдам өзгерістер
+                                модельдің бейімделуінен озып кетуі мүмкін
                             </li>
                             <li>
-                                <strong>Implementation Costs:</strong> Initial setup requires investment in data infrastructure and AI expertise
+                                <strong>Іске Асыру Құны:</strong> Бастапқы орнату деректер инфрақұрылымына және AI
+                                сараптамасына инвестицияны қажет етеді
                             </li>
                             <li>
-                                <strong>Overfitting Risk:</strong> Models may become too specialized to historical data and miss new trends
+                                <strong>Артық Оқыту Қаупі:</strong> Модельдер тарихи деректерге тым бейімделіп, жаңа
+                                трендтерді жіберіп алуы мүмкін
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="future-outlook">
-                    <h3>Future Directions</h3>
+                    <h3>Болашақ Бағыттар</h3>
                     <div class="outlook-cards">
                         <div class="outlook-card">
                             <span class="outlook-icon">🔮</span>
-                            <h4>Enhanced Prediction</h4>
-                            <p>Integrate deep learning models for multi-year forecasting and complex pattern recognition</p>
+                            <h4>Жетілдірілген Болжам</h4>
+                            <p>Көп жылдық болжау және күрделі үлгілерді тану үшін терең оқыту модельдерін біріктіру</p>
                         </div>
                         <div class="outlook-card">
                             <span class="outlook-icon">🌍</span>
-                            <h4>Real-Time Integration</h4>
-                            <p>Connect with live POS systems and supply chain data for instant forecast updates</p>
+                            <h4>Нақты Уақыттағы Интеграция</h4>
+                            <p>Жедел болжам жаңартулары үшін POS жүйелерімен және жеткізу тізбегі деректерімен байланысу
+                            </p>
                         </div>
                         <div class="outlook-card">
                             <span class="outlook-icon">🤝</span>
-                            <h4>Collaborative Intelligence</h4>
-                            <p>Combine AI predictions with human expertise for hybrid decision-making</p>
+                            <h4>Коллаборативті Интеллект</h4>
+                            <p>Гибридті шешім қабылдау үшін AI болжамдарын адами сараптамамен біріктіру</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="final-statement">
-                    <h3>Final Statement</h3>
-                    <p class="highlight-text">Seasonal demand forecasting powered by artificial intelligence represents a critical competitive advantage in modern business. By leveraging historical data, neural networks, and continuous monitoring, organizations can optimize operations, reduce costs, and deliver superior customer experiences. This project demonstrates that the future of business analytics lies in intelligent automation that enhances, rather than replaces, human decision-making.</p>
+                    <h3>Қорытынды Мәлімдеме</h3>
+                    <p class="highlight-text">Жасанды интеллектпен қуатталған маусымдық сұранысты болжау заманауи
+                        бизнестегі маңызды бәсекелестік артықшылықты білдіреді. Тарихи деректерді, нейрондық желілерді
+                        және үздіксіз мониторингті қолдана отырып, ұйымдар операцияларды оңтайландыра алады, шығындарды
+                        азайта алады және тұтынушыларға жоғары сапалы қызмет көрсете алады. Бұл жоба бизнес аналитиканың
+                        болашағы адами шешім қабылдауды ауыстыратын емес, күшейтетін зияткерлік автоматтандыруда екенін
+                        көрсетеді.</p>
                 </div>
 
                 <div class="call-to-action-final">
-                    <h3>Ready to Transform Your Business?</h3>
-                    <p>Implement AI-powered forecasting in your organization and join the data-driven future.</p>
+                    <h3>Бизнесіңізді өзгертуге дайынсыз ба?</h3>
+                    <p>AI-қуатты болжауды ұйымыңызда енгізіңіз және деректерге негізделген болашаққа қосылыңыз.</p>
                     <div class="cta-buttons">
-                        <a href="#data-forecast" class="btn btn-primary">Explore Data</a>
-                        <a href="#ai-tools" class="btn btn-secondary">Try AI Tools</a>
+                        <a href="#data-forecast" class="btn btn-primary">Деректерді зерттеу</a>
+                        <a href="#ai-tools" class="btn btn-secondary">AI құралдарын байқап көріңіз</a>
                     </div>
                 </div>
             </div>
@@ -518,38 +588,39 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>About This Project</h4>
-                    <p>An academic demonstration of AI-powered seasonal demand forecasting for business optimization.</p>
+                    <h4>Бұл Жоба Туралы</h4>
+                    <p>Бизнесті оңтайландыру үшін AI-қуатты маусымдық сұранысты болжаудың академиялық демонстрациясы.
+                    </p>
                 </div>
                 <div class="footer-section">
-                    <h4>Neural Network Elements</h4>
+                    <h4>Нейрондық Желі Элементтері</h4>
                     <ul>
-                        <li>✓ AI-Generated Visualization</li>
-                        <li>✓ AI Background Music</li>
-                        <li>✓ Neuro-Avatar Assistant</li>
-                        <li>✓ Interactive AI Chatbot</li>
+                        <li>✓ AI-Жасалған Визуализация</li>
+                        <li>✓ AI Фондық Музыка</li>
+                        <li>✓ Нейро-Аватар Көмекшісі</li>
+                        <li>✓ Интерактивті AI Чат-боты</li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Technologies Used</h4>
+                    <h4>Қолданылған Технологиялар</h4>
                     <ul>
-                        <li>Machine Learning & Neural Networks</li>
-                        <li>Time Series Analysis</li>
-                        <li>Interactive Data Visualization</li>
-                        <li>AI Agent Monitoring</li>
+                        <li>Машиналық Оқыту & Нейрондық Желілер</li>
+                        <li>Уақыттық Қатарларды Талдау</li>
+                        <li>Интерактивті Деректер Визуализациясы</li>
+                        <li>AI Агент Мониторингі</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Seasonal Demand Forecasting Project. All rights reserved.</p>
-                <p>Created for academic purposes - demonstrating AI in business analytics.</p>
+                <p>&copy; 2024 Маусымдық Сұранысты Болжау Жобасы. Барлық құқықтар қорғалған.</p>
+                <p>Академиялық мақсаттар үшін жасалған - бизнес аналитикадағы AI мүмкіндіктерін көрсету.</p>
             </div>
         </div>
     </footer>
 
     <!-- Audio Element for Background Music -->
     <audio id="bgMusic" loop>
-        <source src="assets/music/analytics-background-music.mp3" type="audio/mpeg">
+        <source src="assets/music/background_audio.mp3" type="audio/mpeg">
     </audio>
 
     <!-- Scripts -->
@@ -558,4 +629,5 @@
     <script src="js/charts.js"></script>
     <script src="js/chatbot.js"></script>
 </body>
+
 </html>
