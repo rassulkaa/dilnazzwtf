@@ -8,123 +8,116 @@ document.addEventListener('DOMContentLoaded', function () {
     // Knowledge base for chatbot responses
     const knowledgeBase = {
         'seasonality': {
-            keywords: ['seasonality', 'seasonal', 'calculate', 'index'],
-            response: `<p>Seasonality is calculated using the <strong>Seasonality Index</strong>, which measures how much demand in a specific period deviates from the average.</p>
-            <p><strong>Formula:</strong> Seasonality Index = (Period Demand / Average Demand)</p>
+            keywords: ['seasonality', 'seasonal', 'calculate', 'index', 'маусымдылық', 'маусым', 'есептеу', 'индекс'],
+            response: `<p>Маусымдылық <strong>Маусымдық Индекс</strong> арқылы есептеледі, ол нақты кезеңдегі сұраныстың орташа деңгейден қаншалықты ауытқитынын көрсетеді.</p>
+            <p><strong>Формула:</strong> Маусымдық Индекс = (Кезеңдік Сұраныс / Орташа Сұраныс)</p>
             <ul>
-                <li>Index > 1.0: Above-average demand (peak season)</li>
-                <li>Index < 1.0: Below-average demand (low season)</li>
-                <li>Index = 1.0: Average demand</li>
+                <li>Индекс > 1.0: Орташадан жоғары сұраныс (шың маусымы)</li>
+                <li>Индекс < 1.0: Орташадан төмен сұраныс (төмен маусым)</li>
+                <li>Индекс = 1.0: Орташа сұраныс</li>
             </ul>
-            <p>For example, winter jackets in December have an index of 1.98, meaning demand is 98% higher than the annual average.</p>`
+            <p>Мысалы, қысқы күртешелер желтоқсанда 1.98 индексіне ие, яғни сұраныс жылдық орташа деңгейден 98% жоғары.</p>`
         },
         'data': {
-            keywords: ['data', 'source', 'use', 'historical', 'information'],
-            response: `<p>Our forecasting model uses the following data sources:</p>
+            keywords: ['data', 'source', 'use', 'historical', 'information', 'деректер', 'дерек', 'көз', 'тарихи', 'ақпарат'],
+            response: `<p>Біздің болжау моделіміз келесі деректер көздерін пайдаланады:</p>
             <ul>
-                <li><strong>Historical Sales Data:</strong> 3 years (2022-2024) of monthly sales figures</li>
-                <li><strong>Seasonality Patterns:</strong> Calculated indices showing demand fluctuations</li>
-                <li><strong>External Factors:</strong> Weather patterns, economic indicators, news trends</li>
-                <li><strong>Product Categories:</strong> Winter apparel, summer beverages, holiday decorations</li>
+                <li><strong>Тарихи Сатылым Деректері:</strong> 3 жылдық (2022-2024) ай сайынғы сатылым көрсеткіштері</li>
+                <li><strong>Маусымдық Үлгілер:</strong> Сұраныс ауытқуларын көрсететін есептелген индекстер</li>
+                <li><strong>Сыртқы Факторлар:</strong> Ауа-райы үлгілері, экономикалық көрсеткіштер, жаңалықтар трендтері</li>
+                <li><strong>Өнім Санаттары:</strong> Қысқы киімдер, жазғы сусындар, мерекелік әшекейлер</li>
             </ul>
-            <p>The model combines this historical data with real-time monitoring to generate accurate predictions.</p>`
+            <p>Модель дәл болжамдар жасау үшін осы тарихи деректерді нақты уақыттағы мониторингпен біріктіреді.</p>`
         },
         'limitations': {
-            keywords: ['limitation', 'problem', 'issue', 'drawback', 'weakness', 'challenge'],
-            response: `<p>While AI forecasting is powerful, it has several important limitations:</p>
+            keywords: ['limitation', 'problem', 'issue', 'drawback', 'weakness', 'challenge', 'шектеу', 'кемшілік', 'мәселе'],
+            response: `<p>AI болжау күшті құрал болғанымен, оның бірнеше маңызды шектеулері бар:</p>
             <ul>
-                <li><strong>Historical Dependency:</strong> Predictions assume future patterns will resemble the past</li>
-                <li><strong>Black Swan Events:</strong> Cannot predict unprecedented disruptions (pandemics, natural disasters)</li>
-                <li><strong>Data Quality:</strong> Accuracy depends on clean, comprehensive input data</li>
-                <li><strong>Market Dynamics:</strong> Rapid consumer behavior changes may outpace model adaptation</li>
-                <li><strong>Overfitting Risk:</strong> Model may become too specialized to historical patterns</li>
-                <li><strong>External Shocks:</strong> Supply chain disruptions or policy changes are hard to predict</li>
+                <li><strong>Тарихи Тәуелділік:</strong> Болжамдар болашақ үлгілер өткенге ұқсайды деп болжайды</li>
+                <li><strong>Форс-мажорлық Оқиғалар:</strong> Бұрын-соңды болмаған кедергілерді (пандемиялар, табиғи апаттар) болжай алмайды</li>
+                <li><strong>Деректер Сапасы:</strong> Дәлдік таза, толық кіріс деректеріне байланысты</li>
+                <li><strong>Нарықтық Динамика:</strong> Тұтынушылық мінез-құлықтың жылдам өзгеруі модельдің бейімделуінен озып кетуі мүмкін</li>
+                <li><strong>Артық Оқыту Қаупі:</strong> Модель тарихи үлгілерге тым мамандануы мүмкін</li>
             </ul>
-            <p>Best practice is to combine AI forecasts with human expertise and market knowledge.</p>`
+            <p>Ең жақсы тәжірибе - AI болжамдарын адами сараптамамен және нарықтық біліммен біріктіру.</p>`
         },
         'forecast': {
-            keywords: ['forecast', 'predict', 'prediction', 'future', 'estimate'],
-            response: `<p>Our forecasting methodology combines multiple techniques:</p>
+            keywords: ['forecast', 'predict', 'prediction', 'future', 'estimate', 'болжам', 'болжау', 'болашақ'],
+            response: `<p>Біздің болжау әдістемеміз бірнеше техниканы біріктіреді:</p>
             <ul>
-                <li><strong>Moving Averages:</strong> Smooths short-term fluctuations to identify trends</li>
-                <li><strong>Seasonal Adjustment:</strong> Applies seasonality indices to base forecasts</li>
-                <li><strong>Neural Networks:</strong> Learns complex patterns in historical data</li>
-                <li><strong>External Data Integration:</strong> AI agent monitors weather, news, and economic factors</li>
+                <li><strong>Жылжымалы Орташа Мәндер:</strong> Трендтерді анықтау үшін қысқа мерзімді ауытқуларды тегістейді</li>
+                <li><strong>Маусымдық Түзету:</strong> Базалық болжамдарға маусымдық индекстерді қолданады</li>
+                <li><strong>Нейрондық Желілер:</strong> Тарихи деректердегі күрделі үлгілерді үйренеді</li>
+                <li><strong>Сыртқы Деректерді Біріктіру:</strong> AI агенті ауа-райын, жаңалықтарды және экономикалық факторларды бақылайды</li>
             </ul>
-            <p><strong>Accuracy:</strong> Our model achieves 95%+ accuracy on average, with forecasts typically within 2-5% of actual sales.</p>
-            <p>Forecasts are continuously updated as new data becomes available and market conditions change.</p>`
+            <p><strong>Дәлдік:</strong> Біздің модель орташа есеппен 95%+ дәлдікке қол жеткізеді, болжамдар әдетте нақты сатылымнан 2-5% шегінде болады.</p>`
         },
         'business': {
-            keywords: ['business', 'application', 'benefit', 'use case', 'why', 'important'],
-            response: `<p>Seasonal demand forecasting provides critical business benefits:</p>
+            keywords: ['business', 'application', 'benefit', 'use case', 'why', 'important', 'бизнес', 'қолдану', 'пайда', 'маңызды'],
+            response: `<p>Маусымдық сұранысты болжау бизнестің маңызды артықшылықтарын береді:</p>
             <ul>
-                <li><strong>Inventory Optimization:</strong> Stock the right amount at the right time</li>
-                <li><strong>Cost Reduction:</strong> Minimize holding costs and prevent stockouts</li>
-                <li><strong>Revenue Maximization:</strong> Ensure product availability during peak demand</li>
-                <li><strong>Supply Chain Efficiency:</strong> Better production planning and supplier coordination</li>
-                <li><strong>Marketing Timing:</strong> Launch campaigns when demand is rising</li>
-                <li><strong>Cash Flow Management:</strong> Optimize working capital allocation</li>
+                <li><strong>Қорларды Оңтайландыру:</strong> Дұрыс уақытта дұрыс мөлшерде сақтау</li>
+                <li><strong>Шығындарды Азайту:</strong> Ұстау шығындарын азайту және тапшылықтың алдын алу</li>
+                <li><strong>Кірісті Максимизациялау:</strong> Ең жоғары сұраныс кезінде өнімнің қолжетімділігін қамтамасыз ету</li>
+                <li><strong>Жеткізу Тізбегінің Тиімділігі:</strong> Өндірісті жоспарлауды және жеткізушілермен үйлестіруді жақсарту</li>
+                <li><strong>Маркетинг Уақыты:</strong> Сұраныс өсіп келе жатқанда науқандарды бастау</li>
             </ul>
-            <p>Companies using AI forecasting typically see 10-30% reduction in inventory costs while improving customer satisfaction.</p>`
+            <p>AI болжауын қолданатын компаниялар әдетте қор шығындарын 10-30%-ға азайтып, тұтынушылардың қанағаттануын арттырады.</p>`
         },
         'model': {
-            keywords: ['model', 'work', 'algorithm', 'how', 'method', 'technique'],
-            response: `<p>Our prediction model works through a multi-stage process:</p>
+            keywords: ['model', 'work', 'algorithm', 'how', 'method', 'technique', 'модель', 'жұмыс', 'әдіс', 'алгоритм'],
+            response: `<p>Біздің болжау моделіміз көп кезеңді процесс арқылы жұмыс істейді:</p>
             <ol>
-                <li><strong>Data Collection:</strong> Gather historical sales data and external factors</li>
-                <li><strong>Preprocessing:</strong> Clean data, handle outliers, normalize values</li>
-                <li><strong>Trend Analysis:</strong> Calculate moving averages to identify long-term patterns</li>
-                <li><strong>Seasonality Detection:</strong> Compute seasonality indices for each month/period</li>
-                <li><strong>Neural Network Training:</strong> Train ML model on historical patterns</li>
-                <li><strong>Forecast Generation:</strong> Combine statistical and ML predictions</li>
-                <li><strong>Continuous Monitoring:</strong> AI agent watches for deviations and recommends adjustments</li>
-            </ol>
-            <p>This hybrid approach leverages both traditional statistics and modern AI for optimal accuracy.</p>`
+                <li><strong>Деректерді Жинау:</strong> Тарихи сатылым деректерін және сыртқы факторларды жинау</li>
+                <li><strong>Алдын ала өңдеу:</strong> Деректерді тазалау, ауытқуларды өңдеу, мәндерді қалыпқа келтіру</li>
+                <li><strong>Тренд Талдауы:</strong> Ұзақ мерзімді үлгілерді анықтау үшін жылжымалы орташа мәндерді есептеу</li>
+                <li><strong>Маусымдылықты Анықтау:</strong> Әр ай/кезең үшін маусымдық индекстерді есептеу</li>
+                <li><strong>Нейрондық Желіні Оқыту:</strong> ML моделін тарихи үлгілерге үйрету</li>
+                <li><strong>Болжам Жасау:</strong> Статистикалық және ML болжамдарын біріктіру</li>
+                <li><strong>Үздіксіз Мониторинг:</strong> AI агенті ауытқуларды бақылайды және түзетулерді ұсынады</li>
+            </ol>`
         },
         'agent': {
-            keywords: ['agent', 'ai agent', 'monitoring', 'update', 'adjust'],
-            response: `<p>The AI Agent continuously monitors and improves forecasts:</p>
+            keywords: ['agent', 'ai agent', 'monitoring', 'update', 'adjust', 'агент', 'мониторинг', 'жаңарту', 'түзету'],
+            response: `<p>AI Агенті болжамдарды үздіксіз бақылайды және жақсартады:</p>
             <ul>
-                <li><strong>External Data Monitoring:</strong> Tracks weather, news, economic indicators, social media sentiment</li>
-                <li><strong>Anomaly Detection:</strong> Identifies patterns that deviate from expectations</li>
-                <li><strong>Accuracy Tracking:</strong> Compares predictions to actual sales in real-time</li>
-                <li><strong>Recommendation Engine:</strong> Suggests forecast adjustments based on new information</li>
+                <li><strong>Сыртқы Деректер Мониторингі:</strong> Ауа-райын, жаңалықтарды, экономикалық көрсеткіштерді бақылайды</li>
+                <li><strong>Аномалияларды Анықтау:</strong> Күтулерден ауытқитын үлгілерді анықтайды</li>
+                <li><strong>Дәлдікті Бақылау:</strong> Болжамдарды нақты сатылыммен нақты уақытта салыстырады</li>
+                <li><strong>Ұсыныс Қозғалтқышы:</strong> Жаңа ақпаратқа негізделген болжам түзетулерін ұсынады</li>
             </ul>
-            <p><strong>Example:</strong> If weather forecasts predict an unusually warm winter, the agent recommends reducing winter jacket forecasts by 3-8%.</p>
-            <p>This ensures forecasts stay accurate even as market conditions change.</p>`
+            <p><strong>Мысалы:</strong> Егер ауа-райы болжамы ерекше жылы қысты болжаса, агент қысқы күртеше болжамын 3-8%-ға азайтуды ұсынады.</p>`
         },
         'accuracy': {
-            keywords: ['accuracy', 'accurate', 'reliable', 'error', 'performance'],
-            response: `<p>Our model demonstrates strong accuracy metrics:</p>
+            keywords: ['accuracy', 'accurate', 'reliable', 'error', 'performance', 'дәлдік', 'қате', 'нәтиже'],
+            response: `<p>Біздің модель жоғары дәлдік көрсеткіштерін көрсетеді:</p>
             <ul>
-                <li><strong>Overall Accuracy:</strong> 95.2% average</li>
-                <li><strong>Winter Products:</strong> 96.1% accuracy</li>
-                <li><strong>Summer Products:</strong> 94.8% accuracy</li>
-                <li><strong>Holiday Products:</strong> 94.5% accuracy</li>
+                <li><strong>Жалпы Дәлдік:</strong> орташа есеппен 95.2%</li>
+                <li><strong>Қысқы Өнімдер:</strong> 96.1% дәлдік</li>
+                <li><strong>Жазғы Өнімдер:</strong> 94.8% дәлдік</li>
+                <li><strong>Мерекелік Өнімдер:</strong> 94.5% дәлдік</li>
             </ul>
-            <p><strong>Variance:</strong> Most predictions are within ±2-5% of actual sales. Larger variances typically occur during:</p>
+            <p><strong>Ауытқу:</strong> Көптеген болжамдар нақты сатылымның ±2-5% шегінде. Үлкен ауытқулар әдетте келесі жағдайларда болады:</p>
             <ul>
-                <li>Unexpected weather events</li>
-                <li>Economic shocks</li>
-                <li>New competitive products</li>
-                <li>Marketing campaign surprises</li>
-            </ul>
-            <p>Regular model retraining and AI agent monitoring help maintain high accuracy over time.</p>`
+                <li>Күтпеген ауа-райы оқиғалары</li>
+                <li>Экономикалық сілкіністер</li>
+                <li>Жаңа бәсекелестік өнімдер</li>
+            </ul>`
         }
     };
 
     // Default response for unrecognized questions
-    const defaultResponse = `<p>I'm sorry, I don't have specific information about that topic. I can help with questions about:</p>
+    const defaultResponse = `<p>Кешіріңіз, менде ол тақырып туралы нақты ақпарат жоқ. Мен келесі сұрақтарға көмектесе аламын:</p>
     <ul>
-        <li>How seasonality is calculated</li>
-        <li>What data sources we use</li>
-        <li>Forecasting methodologies and models</li>
-        <li>Business applications and benefits</li>
-        <li>Limitations of AI forecasting</li>
-        <li>How the AI agent works</li>
-        <li>Forecast accuracy metrics</li>
+        <li>Маусымдылық қалай есептеледі</li>
+        <li>Біз қандай деректер көздерін қолданамыз</li>
+        <li>Болжау әдістемелері мен модельдері</li>
+        <li>Бизнеске қолдану және артықшылықтар</li>
+        <li>AI болжаудың шектеулері</li>
+        <li>AI агенті қалай жұмыс істейді</li>
+        <li>Болжам дәлдігінің метрикалары</li>
     </ul>
-    <p>Try asking one of the quick questions below, or rephrase your question!</p>`;
+    <p>Төмендегі жылдам сұрақтардың бірін қойып көріңіз немесе сұрағыңызды қайталаңыз!</p>`;
 
     // Send message function
     function sendMessage(message) {
