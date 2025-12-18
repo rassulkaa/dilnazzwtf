@@ -1,4 +1,4 @@
-// Charts - Data visualization using Chart.js
+// Charts - Data visualization using Chart.js with reveal animations
 document.addEventListener('DOMContentLoaded', async function () {
     let salesData = [];
     let productsMap = {};
@@ -14,11 +14,45 @@ document.addEventListener('DOMContentLoaded', async function () {
             return acc;
         }, {});
 
-        createTrendChart();
-        createAccuracyChart();
+        // Setup intersection observer for chart reveal
+        setupChartReveal();
 
     } catch (error) {
         console.error('Error loading chart data:', error);
+    }
+
+    // Setup chart reveal animation
+    function setupChartReveal() {
+        const chartContainers = document.querySelectorAll('.chart-container');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2
+        };
+
+        const chartObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const chartId = entry.target.querySelector('canvas')?.id;
+
+                    // Create chart when visible
+                    if (chartId === 'trendChart' && !window.trendChartCreated) {
+                        window.trendChartCreated = true;
+                        setTimeout(() => createTrendChart(), 200);
+                    } else if (chartId === 'accuracyChart' && !window.accuracyChartCreated) {
+                        window.accuracyChartCreated = true;
+                        setTimeout(() => createAccuracyChart(), 200);
+                    }
+
+                    chartObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        chartContainers.forEach(container => {
+            chartObserver.observe(container);
+        });
     }
 
     // Trend Chart - Comparing seasonal patterns
@@ -26,7 +60,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const ctx = document.getElementById('trendChart');
         if (!ctx) return;
 
-        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        const months = ['Қаң', 'Ақп', 'Нау', 'Сәу', 'Мам', 'Мау', 'Шіл', 'Там', 'Қыр', 'Қаз', 'Қар', 'Жел'];
 
         // Get 2024 data for each product
         const datasets = [];
@@ -45,7 +79,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 const color = colors[colorIndex % colors.length];
 
                 datasets.push({
-                    label: `${productInfo.name} - Actual`,
+                    label: `${productInfo.name} - Нақты`,
                     data: actualData,
                     borderColor: color.border,
                     backgroundColor: color.bg,
@@ -55,7 +89,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 });
 
                 datasets.push({
-                    label: `${productInfo.name} - Forecast`,
+                    label: `${productInfo.name} - Болжам`,
                     data: forecastData,
                     borderColor: color.border,
                     backgroundColor: 'transparent',
@@ -79,6 +113,10 @@ document.addEventListener('DOMContentLoaded', async function () {
                 responsive: true,
                 maintainAspectRatio: true,
                 aspectRatio: 2,
+                animation: {
+                    duration: 1500,
+                    easing: 'easeInOutQuart'
+                },
                 plugins: {
                     legend: {
                         position: 'top',
@@ -181,7 +219,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             data: {
                 labels: productNames,
                 datasets: [{
-                    label: 'Forecast Accuracy (%)',
+                    label: 'Болжам дәлдігі (%)',
                     data: accuracyData,
                     backgroundColor: [
                         'rgba(37, 99, 235, 0.7)',
@@ -201,6 +239,10 @@ document.addEventListener('DOMContentLoaded', async function () {
                 responsive: true,
                 maintainAspectRatio: true,
                 aspectRatio: 2,
+                animation: {
+                    duration: 1500,
+                    easing: 'easeInOutQuart'
+                },
                 plugins: {
                     legend: {
                         display: false
