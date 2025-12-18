@@ -2,21 +2,21 @@
   "products": [
     {
       "id": "winter-jackets",
-      "name": "Winter Jackets",
-      "category": "Apparel",
-      "seasonality": "Winter"
+      "name": "Қысқы күртешелер",
+      "category": "Киім",
+      "seasonality": "Қыс"
     },
     {
       "id": "summer-beverages",
-      "name": "Summer Beverages",
-      "category": "Food & Drink",
-      "seasonality": "Summer"
+      "name": "Жазғы сусындар",
+      "category": "Тамақ және Сусын",
+      "seasonality": "Жаз"
     },
     {
       "id": "holiday-decorations",
-      "name": "Holiday Decorations",
-      "category": "Home & Garden",
-      "seasonality": "Winter Holidays"
+      "name": "Мерекелік әшекейлер",
+      "category": "Үй және Бақ",
+      "seasonality": "Қысқы демалыс"
     }
   ],
   "salesData": [
@@ -24,169 +24,169 @@
       "product": "winter-jackets",
       "year": 2022,
       "data": [
-        {"month": "January", "actual": 4200, "forecast": 4150, "seasonalityIndex": 1.85},
-        {"month": "February", "actual": 3800, "forecast": 3750, "seasonalityIndex": 1.65},
-        {"month": "March", "actual": 2100, "forecast": 2200, "seasonalityIndex": 0.92},
-        {"month": "April", "actual": 950, "forecast": 1000, "seasonalityIndex": 0.42},
-        {"month": "May", "actual": 600, "forecast": 650, "seasonalityIndex": 0.26},
-        {"month": "June", "actual": 450, "forecast": 500, "seasonalityIndex": 0.20},
-        {"month": "July", "actual": 420, "forecast": 480, "seasonalityIndex": 0.18},
-        {"month": "August", "actual": 480, "forecast": 520, "seasonalityIndex": 0.21},
-        {"month": "September", "actual": 890, "forecast": 920, "seasonalityIndex": 0.39},
-        {"month": "October", "actual": 2300, "forecast": 2250, "seasonalityIndex": 1.01},
-        {"month": "November", "actual": 3600, "forecast": 3550, "seasonalityIndex": 1.58},
-        {"month": "December", "actual": 4500, "forecast": 4400, "seasonalityIndex": 1.98}
+        {"month": "Қаңтар", "actual": 4200, "forecast": 4150, "seasonalityIndex": 1.85},
+        {"month": "Ақпан", "actual": 3800, "forecast": 3750, "seasonalityIndex": 1.65},
+        {"month": "Наурыз", "actual": 2100, "forecast": 2200, "seasonalityIndex": 0.92},
+        {"month": "Сәуір", "actual": 950, "forecast": 1000, "seasonalityIndex": 0.42},
+        {"month": "Мамыр", "actual": 600, "forecast": 650, "seasonalityIndex": 0.26},
+        {"month": "Маусым", "actual": 450, "forecast": 500, "seasonalityIndex": 0.20},
+        {"month": "Шілде", "actual": 420, "forecast": 480, "seasonalityIndex": 0.18},
+        {"month": "Тамыз", "actual": 480, "forecast": 520, "seasonalityIndex": 0.21},
+        {"month": "Қыркүйек", "actual": 890, "forecast": 920, "seasonalityIndex": 0.39},
+        {"month": "Қазан", "actual": 2300, "forecast": 2250, "seasonalityIndex": 1.01},
+        {"month": "Қараша", "actual": 3600, "forecast": 3550, "seasonalityIndex": 1.58},
+        {"month": "Желтоқсан", "actual": 4500, "forecast": 4400, "seasonalityIndex": 1.98}
       ]
     },
     {
       "product": "winter-jackets",
       "year": 2023,
       "data": [
-        {"month": "January", "actual": 4350, "forecast": 4300, "seasonalityIndex": 1.85},
-        {"month": "February", "actual": 3950, "forecast": 3900, "seasonalityIndex": 1.65},
-        {"month": "March", "actual": 2250, "forecast": 2280, "seasonalityIndex": 0.92},
-        {"month": "April", "actual": 1020, "forecast": 1050, "seasonalityIndex": 0.42},
-        {"month": "May", "actual": 630, "forecast": 680, "seasonalityIndex": 0.26},
-        {"month": "June", "actual": 480, "forecast": 520, "seasonalityIndex": 0.20},
-        {"month": "July", "actual": 450, "forecast": 500, "seasonalityIndex": 0.18},
-        {"month": "August", "actual": 510, "forecast": 540, "seasonalityIndex": 0.21},
-        {"month": "September", "actual": 920, "forecast": 960, "seasonalityIndex": 0.39},
-        {"month": "October", "actual": 2400, "forecast": 2350, "seasonalityIndex": 1.01},
-        {"month": "November", "actual": 3750, "forecast": 3700, "seasonalityIndex": 1.58},
-        {"month": "December", "actual": 4650, "forecast": 4580, "seasonalityIndex": 1.98}
+        {"month": "Қаңтар", "actual": 4350, "forecast": 4300, "seasonalityIndex": 1.85},
+        {"month": "Ақпан", "actual": 3950, "forecast": 3900, "seasonalityIndex": 1.65},
+        {"month": "Наурыз", "actual": 2250, "forecast": 2280, "seasonalityIndex": 0.92},
+        {"month": "Сәуір", "actual": 1020, "forecast": 1050, "seasonalityIndex": 0.42},
+        {"month": "Мамыр", "actual": 630, "forecast": 680, "seasonalityIndex": 0.26},
+        {"month": "Маусым", "actual": 480, "forecast": 520, "seasonalityIndex": 0.20},
+        {"month": "Шілде", "actual": 450, "forecast": 500, "seasonalityIndex": 0.18},
+        {"month": "Тамыз", "actual": 510, "forecast": 540, "seasonalityIndex": 0.21},
+        {"month": "Қыркүйек", "actual": 920, "forecast": 960, "seasonalityIndex": 0.39},
+        {"month": "Қазан", "actual": 2400, "forecast": 2350, "seasonalityIndex": 1.01},
+        {"month": "Қараша", "actual": 3750, "forecast": 3700, "seasonalityIndex": 1.58},
+        {"month": "Желтоқсан", "actual": 4650, "forecast": 4580, "seasonalityIndex": 1.98}
       ]
     },
     {
       "product": "winter-jackets",
       "year": 2024,
       "data": [
-        {"month": "January", "actual": 4500, "forecast": 4450, "seasonalityIndex": 1.85},
-        {"month": "February", "actual": 4100, "forecast": 4050, "seasonalityIndex": 1.65},
-        {"month": "March", "actual": 2380, "forecast": 2360, "seasonalityIndex": 0.92},
-        {"month": "April", "actual": 1080, "forecast": 1100, "seasonalityIndex": 0.42},
-        {"month": "May", "actual": 660, "forecast": 710, "seasonalityIndex": 0.26},
-        {"month": "June", "actual": 510, "forecast": 540, "seasonalityIndex": 0.20},
-        {"month": "July", "actual": 480, "forecast": 520, "seasonalityIndex": 0.18},
-        {"month": "August", "actual": 540, "forecast": 560, "seasonalityIndex": 0.21},
-        {"month": "September", "actual": 950, "forecast": 1000, "seasonalityIndex": 0.39},
-        {"month": "October", "actual": 2500, "forecast": 2450, "seasonalityIndex": 1.01},
-        {"month": "November", "actual": 3900, "forecast": 3850, "seasonalityIndex": 1.58},
-        {"month": "December", "actual": 4800, "forecast": 4760, "seasonalityIndex": 1.98}
+        {"month": "Қаңтар", "actual": 4500, "forecast": 4450, "seasonalityIndex": 1.85},
+        {"month": "Ақпан", "actual": 4100, "forecast": 4050, "seasonalityIndex": 1.65},
+        {"month": "Наурыз", "actual": 2380, "forecast": 2360, "seasonalityIndex": 0.92},
+        {"month": "Сәуір", "actual": 1080, "forecast": 1100, "seasonalityIndex": 0.42},
+        {"month": "Мамыр", "actual": 660, "forecast": 710, "seasonalityIndex": 0.26},
+        {"month": "Маусым", "actual": 510, "forecast": 540, "seasonalityIndex": 0.20},
+        {"month": "Шілде", "actual": 480, "forecast": 520, "seasonalityIndex": 0.18},
+        {"month": "Тамыз", "actual": 540, "forecast": 560, "seasonalityIndex": 0.21},
+        {"month": "Қыркүйек", "actual": 950, "forecast": 1000, "seasonalityIndex": 0.39},
+        {"month": "Қазан", "actual": 2500, "forecast": 2450, "seasonalityIndex": 1.01},
+        {"month": "Қараша", "actual": 3900, "forecast": 3850, "seasonalityIndex": 1.58},
+        {"month": "Желтоқсан", "actual": 4800, "forecast": 4760, "seasonalityIndex": 1.98}
       ]
     },
     {
       "product": "summer-beverages",
       "year": 2022,
       "data": [
-        {"month": "January", "actual": 800, "forecast": 850, "seasonalityIndex": 0.35},
-        {"month": "February", "actual": 750, "forecast": 800, "seasonalityIndex": 0.33},
-        {"month": "March", "actual": 1200, "forecast": 1250, "seasonalityIndex": 0.52},
-        {"month": "April", "actual": 2100, "forecast": 2150, "seasonalityIndex": 0.91},
-        {"month": "May", "actual": 3800, "forecast": 3750, "seasonalityIndex": 1.65},
-        {"month": "June", "actual": 4500, "forecast": 4450, "seasonalityIndex": 1.95},
-        {"month": "July", "actual": 4800, "forecast": 4750, "seasonalityIndex": 2.08},
-        {"month": "August", "actual": 4200, "forecast": 4150, "seasonalityIndex": 1.82},
-        {"month": "September", "actual": 2300, "forecast": 2350, "seasonalityIndex": 1.00},
-        {"month": "October", "actual": 1100, "forecast": 1150, "seasonalityIndex": 0.48},
-        {"month": "November", "actual": 850, "forecast": 900, "seasonalityIndex": 0.37},
-        {"month": "December", "actual": 780, "forecast": 820, "seasonalityIndex": 0.34}
+        {"month": "Қаңтар", "actual": 800, "forecast": 850, "seasonalityIndex": 0.35},
+        {"month": "Ақпан", "actual": 750, "forecast": 800, "seasonalityIndex": 0.33},
+        {"month": "Наурыз", "actual": 1200, "forecast": 1250, "seasonalityIndex": 0.52},
+        {"month": "Сәуір", "actual": 2100, "forecast": 2150, "seasonalityIndex": 0.91},
+        {"month": "Мамыр", "actual": 3800, "forecast": 3750, "seasonalityIndex": 1.65},
+        {"month": "Маусым", "actual": 4500, "forecast": 4450, "seasonalityIndex": 1.95},
+        {"month": "Шілде", "actual": 4800, "forecast": 4750, "seasonalityIndex": 2.08},
+        {"month": "Тамыз", "actual": 4200, "forecast": 4150, "seasonalityIndex": 1.82},
+        {"month": "Қыркүйек", "actual": 2300, "forecast": 2350, "seasonalityIndex": 1.00},
+        {"month": "Қазан", "actual": 1100, "forecast": 1150, "seasonalityIndex": 0.48},
+        {"month": "Қараша", "actual": 850, "forecast": 900, "seasonalityIndex": 0.37},
+        {"month": "Желтоқсан", "actual": 780, "forecast": 820, "seasonalityIndex": 0.34}
       ]
     },
     {
       "product": "summer-beverages",
       "year": 2023,
       "data": [
-        {"month": "January", "actual": 830, "forecast": 880, "seasonalityIndex": 0.35},
-        {"month": "February", "actual": 780, "forecast": 830, "seasonalityIndex": 0.33},
-        {"month": "March", "actual": 1250, "forecast": 1300, "seasonalityIndex": 0.52},
-        {"month": "April", "actual": 2180, "forecast": 2230, "seasonalityIndex": 0.91},
-        {"month": "May", "actual": 3950, "forecast": 3900, "seasonalityIndex": 1.65},
-        {"month": "June", "actual": 4680, "forecast": 4620, "seasonalityIndex": 1.95},
-        {"month": "July", "actual": 4980, "forecast": 4930, "seasonalityIndex": 2.08},
-        {"month": "August", "actual": 4370, "forecast": 4310, "seasonalityIndex": 1.82},
-        {"month": "September", "actual": 2390, "forecast": 2440, "seasonalityIndex": 1.00},
-        {"month": "October", "actual": 1140, "forecast": 1190, "seasonalityIndex": 0.48},
-        {"month": "November", "actual": 880, "forecast": 930, "seasonalityIndex": 0.37},
-        {"month": "December", "actual": 810, "forecast": 850, "seasonalityIndex": 0.34}
+        {"month": "Қаңтар", "actual": 830, "forecast": 880, "seasonalityIndex": 0.35},
+        {"month": "Ақпан", "actual": 780, "forecast": 830, "seasonalityIndex": 0.33},
+        {"month": "Наурыз", "actual": 1250, "forecast": 1300, "seasonalityIndex": 0.52},
+        {"month": "Сәуір", "actual": 2180, "forecast": 2230, "seasonalityIndex": 0.91},
+        {"month": "Мамыр", "actual": 3950, "forecast": 3900, "seasonalityIndex": 1.65},
+        {"month": "Маусым", "actual": 4680, "forecast": 4620, "seasonalityIndex": 1.95},
+        {"month": "Шілде", "actual": 4980, "forecast": 4930, "seasonalityIndex": 2.08},
+        {"month": "Тамыз", "actual": 4370, "forecast": 4310, "seasonalityIndex": 1.82},
+        {"month": "Қыркүйек", "actual": 2390, "forecast": 2440, "seasonalityIndex": 1.00},
+        {"month": "Қазан", "actual": 1140, "forecast": 1190, "seasonalityIndex": 0.48},
+        {"month": "Қараша", "actual": 880, "forecast": 930, "seasonalityIndex": 0.37},
+        {"month": "Желтоқсан", "actual": 810, "forecast": 850, "seasonalityIndex": 0.34}
       ]
     },
     {
       "product": "summer-beverages",
       "year": 2024,
       "data": [
-        {"month": "January", "actual": 860, "forecast": 910, "seasonalityIndex": 0.35},
-        {"month": "February", "actual": 810, "forecast": 860, "seasonalityIndex": 0.33},
-        {"month": "March", "actual": 1300, "forecast": 1350, "seasonalityIndex": 0.52},
-        {"month": "April", "actual": 2260, "forecast": 2310, "seasonalityIndex": 0.91},
-        {"month": "May", "actual": 4100, "forecast": 4050, "seasonalityIndex": 1.65},
-        {"month": "June", "actual": 4860, "forecast": 4790, "seasonalityIndex": 1.95},
-        {"month": "July", "actual": 5160, "forecast": 5110, "seasonalityIndex": 2.08},
-        {"month": "August", "actual": 4540, "forecast": 4470, "seasonalityIndex": 1.82},
-        {"month": "September", "actual": 2480, "forecast": 2530, "seasonalityIndex": 1.00},
-        {"month": "October", "actual": 1180, "forecast": 1230, "seasonalityIndex": 0.48},
-        {"month": "November", "actual": 910, "forecast": 960, "seasonalityIndex": 0.37},
-        {"month": "December", "actual": 840, "forecast": 880, "seasonalityIndex": 0.34}
+        {"month": "Қаңтар", "actual": 860, "forecast": 910, "seasonalityIndex": 0.35},
+        {"month": "Ақпан", "actual": 810, "forecast": 860, "seasonalityIndex": 0.33},
+        {"month": "Наурыз", "actual": 1300, "forecast": 1350, "seasonalityIndex": 0.52},
+        {"month": "Сәуір", "actual": 2260, "forecast": 2310, "seasonalityIndex": 0.91},
+        {"month": "Мамыр", "actual": 4100, "forecast": 4050, "seasonalityIndex": 1.65},
+        {"month": "Маусым", "actual": 4860, "forecast": 4790, "seasonalityIndex": 1.95},
+        {"month": "Шілде", "actual": 5160, "forecast": 5110, "seasonalityIndex": 2.08},
+        {"month": "Тамыз", "actual": 4540, "forecast": 4470, "seasonalityIndex": 1.82},
+        {"month": "Қыркүйек", "actual": 2480, "forecast": 2530, "seasonalityIndex": 1.00},
+        {"month": "Қазан", "actual": 1180, "forecast": 1230, "seasonalityIndex": 0.48},
+        {"month": "Қараша", "actual": 910, "forecast": 960, "seasonalityIndex": 0.37},
+        {"month": "Желтоқсан", "actual": 840, "forecast": 880, "seasonalityIndex": 0.34}
       ]
     },
     {
       "product": "holiday-decorations",
       "year": 2022,
       "data": [
-        {"month": "January", "actual": 420, "forecast": 450, "seasonalityIndex": 0.28},
-        {"month": "February", "actual": 380, "forecast": 400, "seasonalityIndex": 0.25},
-        {"month": "March", "actual": 350, "forecast": 380, "seasonalityIndex": 0.23},
-        {"month": "April", "actual": 340, "forecast": 370, "seasonalityIndex": 0.23},
-        {"month": "May", "actual": 360, "forecast": 390, "seasonalityIndex": 0.24},
-        {"month": "June", "actual": 380, "forecast": 410, "seasonalityIndex": 0.25},
-        {"month": "July", "actual": 400, "forecast": 430, "seasonalityIndex": 0.27},
-        {"month": "August", "actual": 450, "forecast": 480, "seasonalityIndex": 0.30},
-        {"month": "September", "actual": 680, "forecast": 710, "seasonalityIndex": 0.45},
-        {"month": "October", "actual": 1850, "forecast": 1820, "seasonalityIndex": 1.23},
-        {"month": "November", "actual": 3200, "forecast": 3150, "seasonalityIndex": 2.13},
-        {"month": "December", "actual": 4500, "forecast": 4450, "seasonalityIndex": 3.00}
+        {"month": "Қаңтар", "actual": 420, "forecast": 450, "seasonalityIndex": 0.28},
+        {"month": "Ақпан", "actual": 380, "forecast": 400, "seasonalityIndex": 0.25},
+        {"month": "Наурыз", "actual": 350, "forecast": 380, "seasonalityIndex": 0.23},
+        {"month": "Сәуір", "actual": 340, "forecast": 370, "seasonalityIndex": 0.23},
+        {"month": "Мамыр", "actual": 360, "forecast": 390, "seasonalityIndex": 0.24},
+        {"month": "Маусым", "actual": 380, "forecast": 410, "seasonalityIndex": 0.25},
+        {"month": "Шілде", "actual": 400, "forecast": 430, "seasonalityIndex": 0.27},
+        {"month": "Тамыз", "actual": 450, "forecast": 480, "seasonalityIndex": 0.30},
+        {"month": "Қыркүйек", "actual": 680, "forecast": 710, "seasonalityIndex": 0.45},
+        {"month": "Қазан", "actual": 1850, "forecast": 1820, "seasonalityIndex": 1.23},
+        {"month": "Қараша", "actual": 3200, "forecast": 3150, "seasonalityIndex": 2.13},
+        {"month": "Желтоқсан", "actual": 4500, "forecast": 4450, "seasonalityIndex": 3.00}
       ]
     },
     {
       "product": "holiday-decorations",
       "year": 2023,
       "data": [
-        {"month": "January", "actual": 440, "forecast": 470, "seasonalityIndex": 0.28},
-        {"month": "February", "actual": 400, "forecast": 420, "seasonalityIndex": 0.25},
-        {"month": "March", "actual": 370, "forecast": 400, "seasonalityIndex": 0.23},
-        {"month": "April", "actual": 360, "forecast": 390, "seasonalityIndex": 0.23},
-        {"month": "May", "actual": 380, "forecast": 410, "seasonalityIndex": 0.24},
-        {"month": "June", "actual": 400, "forecast": 430, "seasonalityIndex": 0.25},
-        {"month": "July", "actual": 420, "forecast": 450, "seasonalityIndex": 0.27},
-        {"month": "August", "actual": 470, "forecast": 500, "seasonalityIndex": 0.30},
-        {"month": "September", "actual": 710, "forecast": 740, "seasonalityIndex": 0.45},
-        {"month": "October", "actual": 1930, "forecast": 1900, "seasonalityIndex": 1.23},
-        {"month": "November", "actual": 3340, "forecast": 3290, "seasonalityIndex": 2.13},
-        {"month": "December", "actual": 4700, "forecast": 4650, "seasonalityIndex": 3.00}
+        {"month": "Қаңтар", "actual": 440, "forecast": 470, "seasonalityIndex": 0.28},
+        {"month": "Ақпан", "actual": 400, "forecast": 420, "seasonalityIndex": 0.25},
+        {"month": "Наурыз", "actual": 370, "forecast": 400, "seasonalityIndex": 0.23},
+        {"month": "Сәуір", "actual": 360, "forecast": 390, "seasonalityIndex": 0.23},
+        {"month": "Мамыр", "actual": 380, "forecast": 410, "seasonalityIndex": 0.24},
+        {"month": "Маусым", "actual": 400, "forecast": 430, "seasonalityIndex": 0.25},
+        {"month": "Шілде", "actual": 420, "forecast": 450, "seasonalityIndex": 0.27},
+        {"month": "Тамыз", "actual": 470, "forecast": 500, "seasonalityIndex": 0.30},
+        {"month": "Қыркүйек", "actual": 710, "forecast": 740, "seasonalityIndex": 0.45},
+        {"month": "Қазан", "actual": 1930, "forecast": 1900, "seasonalityIndex": 1.23},
+        {"month": "Қараша", "actual": 3340, "forecast": 3290, "seasonalityIndex": 2.13},
+        {"month": "Желтоқсан", "actual": 4700, "forecast": 4650, "seasonalityIndex": 3.00}
       ]
     },
     {
       "product": "holiday-decorations",
       "year": 2024,
       "data": [
-        {"month": "January", "actual": 460, "forecast": 490, "seasonalityIndex": 0.28},
-        {"month": "February", "actual": 420, "forecast": 440, "seasonalityIndex": 0.25},
-        {"month": "March", "actual": 390, "forecast": 420, "seasonalityIndex": 0.23},
-        {"month": "April", "actual": 380, "forecast": 410, "seasonalityIndex": 0.23},
-        {"month": "May", "actual": 400, "forecast": 430, "seasonalityIndex": 0.24},
-        {"month": "June", "actual": 420, "forecast": 450, "seasonalityIndex": 0.25},
-        {"month": "July", "actual": 440, "forecast": 470, "seasonalityIndex": 0.27},
-        {"month": "August", "actual": 490, "forecast": 520, "seasonalityIndex": 0.30},
-        {"month": "September", "actual": 740, "forecast": 770, "seasonalityIndex": 0.45},
-        {"month": "October", "actual": 2010, "forecast": 1980, "seasonalityIndex": 1.23},
-        {"month": "November", "actual": 3480, "forecast": 3430, "seasonalityIndex": 2.13},
-        {"month": "December", "actual": 4900, "forecast": 4850, "seasonalityIndex": 3.00}
+        {"month": "Қаңтар", "actual": 460, "forecast": 490, "seasonalityIndex": 0.28},
+        {"month": "Ақпан", "actual": 420, "forecast": 440, "seasonalityIndex": 0.25},
+        {"month": "Наурыз", "actual": 390, "forecast": 420, "seasonalityIndex": 0.23},
+        {"month": "Сәуір", "actual": 380, "forecast": 410, "seasonalityIndex": 0.23},
+        {"month": "Мамыр", "actual": 400, "forecast": 430, "seasonalityIndex": 0.24},
+        {"month": "Маусым", "actual": 420, "forecast": 450, "seasonalityIndex": 0.25},
+        {"month": "Шілде", "actual": 440, "forecast": 470, "seasonalityIndex": 0.27},
+        {"month": "Тамыз", "actual": 490, "forecast": 520, "seasonalityIndex": 0.30},
+        {"month": "Қыркүйек", "actual": 740, "forecast": 770, "seasonalityIndex": 0.45},
+        {"month": "Қазан", "actual": 2010, "forecast": 1980, "seasonalityIndex": 1.23},
+        {"month": "Қараша", "actual": 3480, "forecast": 3430, "seasonalityIndex": 2.13},
+        {"month": "Желтоқсан", "actual": 4900, "forecast": 4850, "seasonalityIndex": 3.00}
       ]
     }
   ],
   "metadata": {
-    "description": "Seasonal sales data for demonstration of demand forecasting",
-    "dataSource": "Simulated historical sales data based on typical seasonal patterns",
-    "forecastMethod": "Moving average with seasonal adjustment",
+    "description": "Сұранысты болжауды көрсетуге арналған маусымдық сатылым деректері",
+    "dataSource": "Типтік маусымдық үлгілерге негізделген симуляцияланған тарихи сатылым деректері",
+    "forecastMethod": "Маусымдық түзетулермен жылжымалы орташа мән",
     "lastUpdated": "2024-12-18"
   }
 }
