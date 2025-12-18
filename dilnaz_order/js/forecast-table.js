@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     } catch (error) {
         console.error('Error loading sales data:', error);
-        document.getElementById('tableBody').innerHTML = '<tr><td colspan="7">Error loading data</td></tr>';
+        document.getElementById('tableBody').innerHTML = '<tr><td colspan="7">Деректерді жүктеу қатесі</td></tr>';
     }
 
     // Prepare data for table
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const tbody = document.getElementById('tableBody');
 
         if (data.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; padding: 2rem;">No data matching filters</td></tr>';
+            tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; padding: 2rem;">Сүзгілерге сәйкес деректер жоқ</td></tr>';
             return;
         }
 
@@ -151,8 +151,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             if (typeof aVal === 'string') {
                 // For months, use custom order
                 if (column === 'month') {
-                    const monthOrder = ['January', 'February', 'March', 'April', 'May', 'June',
-                        'July', 'August', 'September', 'October', 'November', 'December'];
+                    const monthOrder = ['Қаңтар', 'Ақпан', 'Наурыз', 'Сәуір', 'Мамыр', 'Маусым',
+                        'Шілде', 'Тамыз', 'Қыркүйек', 'Қазан', 'Қараша', 'Желтоқсан'];
                     aVal = monthOrder.indexOf(aVal);
                     bVal = monthOrder.indexOf(bVal);
                     return ascending ? aVal - bVal : bVal - aVal;
